@@ -13,6 +13,6 @@ interface WordDao {
     @Query("DELETE FROM word_table")
     fun deleteAll()
 
-    @Query("SELECT * FROM word_table ORDER BY word ASC")
+    @Query("SELECT * FROM word_table")
     fun getAllWords(): LiveData<List<Word>>
 }
